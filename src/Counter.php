@@ -10,7 +10,7 @@ class Counter{
     }
 
     public function getCounter():int{
-        return $this->counter();
+        return $this->counter;
     }
 
 
