@@ -7,7 +7,18 @@ use PHPUnit\Framework\Assert;
 
 class CounterTest extends TestCase{
     
+
+
     public function testCounter(){
+        $counter = new Counter();
+        $counter->increment();
+        $this->assertEquals(1, $counter->getCounter());
+    }
+
+    /**
+     * @test
+     */
+    public function increment(){
         $counter = new Counter();
         $counter->increment();
         $this->assertEquals(1, $counter->getCounter());
